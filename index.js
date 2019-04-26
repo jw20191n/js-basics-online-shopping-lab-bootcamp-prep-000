@@ -11,10 +11,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  function randomNumber(){
-    return Math.floor(Math.random() * 100) + 1;
-  }
-  var random = randomNumber()
+  var random = Math.floor(Math.random() * 100) + 1;
   
   function updateObjectWithKeyAndValue(obj, key, value) {
     obj[key]=value
