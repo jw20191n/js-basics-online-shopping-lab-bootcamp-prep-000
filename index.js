@@ -1,5 +1,4 @@
 var cart = [];
-  var a = {}
 
 function getCart() {
  return cart;
@@ -11,17 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  itemPrice = Math.floor(Math.random() * 100) + 1
-  
-  function updateObjectWithKeyAndValue(obj, key, value) {
-    obj[key]=value
-    return obj
-  }
-
-  updateObjectWithKeyAndValue(a, 'itemName', item);
-  updateObjectWithKeyAndValue(a, 'itemPrice', random);
-  
-  cart.push(a);
+  itemPrice = Math.floor(Math.random() * 100) + 1;
+  var itemObject = {[item]:itemPrice};
+  cart.push(itemObject);
   
   return item + " has been added to your cart."
   
