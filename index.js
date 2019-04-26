@@ -55,7 +55,7 @@ function viewCart() {
 function total() {
   let total = 0;
   for (let i=0;i<cart.length;i++){
-    total += cart[i][Object.keys(cart[i])]
+    total += cart[i].itemPrice
   }
   return total
 }
