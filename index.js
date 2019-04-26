@@ -12,15 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var random = Math.floor(Math.random() * 100) + 1;
   
-  function updateObjectWithKeyAndValue(obj, key, value) {
-    obj[key]=value
-    return obj
-  }
-
-  updateObjectWithKeyAndValue(a, 'itemName', item);
-  updateObjectWithKeyAndValue(a, 'itemPrice', random);
-  
-  cart.push(a);
+  var newObject = {itemName:item}
   
   return item + " has been added to your cart."
   
