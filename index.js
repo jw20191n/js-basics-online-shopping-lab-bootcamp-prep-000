@@ -74,7 +74,7 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   } else{
     var all = total()
+    cart = []
     return "Your total cost is $" + all + ", which will be charged to the card " + cardNumber + "."
   }
-  cart = []
 }
